@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",        // Указывает, куда компилировать файлы
+    "rootDir": "./src",        // Исходные файлы TypeScript
+    "module": "CommonJS",      // Используем CommonJS для совместимости с Node.js
+    "target": "ES6",           // Компилируем в ES6 (можно ES2020 или ESNext)
+    "strict": true,            // Включает строгий режим TypeScript
+    "esModuleInterop": true,   // Позволяет импортировать CommonJS модули как ES6
+    "forceConsistentCasingInFileNames": true, // Следит за регистром в именах файлов
+    "skipLibCheck": true       // Пропускает проверку типов в node_modules
+  },
+  "include": ["src"],          // Указываем, какие файлы компилировать
+  "exclude": ["node_modules"]  // Исключаем node_modules
+}
